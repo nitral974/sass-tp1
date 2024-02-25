@@ -1,5 +1,5 @@
 :root {
-  --font-family: "Inter, sans serif";
+  --font-family: "Merriweather";
 }
 
 html {
@@ -18,6 +18,16 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  border: 2px solid black;
+  padding: 1.8rem 4.5rem;
+  letter-spacing: 3px;
+  display: inline-block;
 }
 
 header {
@@ -74,17 +84,163 @@ header {
   bottom: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar ul {
   display: flex;
 }
-.navbar-list a {
+.navbar .navbar-list i {
+  padding: 0 25px;
+  color: white;
+}
+.navbar-link {
   display: block;
   padding: 25px 15px;
   color: white;
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 1.9rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: 0.3s ease-in;
+}
+.navbar-link:hover {
+  background: white;
+  color: black;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+.headline-date {
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 80px;
+}
+.headline-date::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: rgba(128, 128, 128, 0.418);
+  top: 50%;
+  left: 160%;
+  width: 200%;
+}
+.headline-date::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: rgba(128, 128, 128, 0.418);
+  top: 50%;
+  right: 160%;
+  width: 200%;
+}
+.headline-title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.headline-text {
+  text-align: center;
+  width: 35%;
+  line-height: 5rem;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+.headline-image {
+  width: 70%;
+  margin: 0 auto 80px;
+}
+.headline-image img {
+  width: 100%;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: 1px solid gray;
+}
+.news-left {
+  border-right: 1px solid gray;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  padding: 80px 0px;
+}
+.article-text {
+  width: 80%;
+  text-align: center;
+  line-height: 32px;
+}
+
+.contact {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 auto;
+  row-gap: 32px;
+}
+.contact label {
+  font-family: "Inter";
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  color: rgb(128, 128, 128);
+}
+.contact input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+}
+.contact textarea {
+  width: 100%;
+  height: 20rem;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  resize: none;
+}
+.contact-other {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.contact h2 {
+  margin-right: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(128, 128, 128, 0.418);
+  font-family: "Inter";
+  font-size: 1.6rem;
+}
+.contact-address {
+  display: flex;
+  line-height: 3rem;
+}
+.contact-phone {
+  display: flex;
+  line-height: 3rem;
+}
+.contact-email {
+  display: flex;
+  line-height: 3rem;
 }
 
 * {
