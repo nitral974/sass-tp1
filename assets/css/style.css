@@ -1,0 +1,96 @@
+:root {
+  --font-family: "Inter, sans serif";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg.jpg") center/cover;
+}
+
+.hero {
+  max-width: 110rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.hero-title {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.hero-text {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.circle {
+  align-self: center;
+}
+.circle-container {
+  height: 9rem;
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 60%;
+  background: rgba(255, 255, 255, 0.199);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar-list a {
+  display: block;
+  padding: 25px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
